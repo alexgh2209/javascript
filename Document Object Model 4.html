@@ -1,0 +1,27 @@
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <title>Document Object Model 4</title>
+      
+    </head>
+    <body>
+        1d="lista">
+            <ol>
+                 <li id="primero">Lorem ipsum <b>dolor</b> sit amet.<li>
+                    <li>Asperiores ad, quam unde. Fuga.</li>
+
+</ol> 
+    <script>
+
+        var elemento = document.createElement("li"),
+         contenido = document.createTextNode("Nuevo Texto");
+
+        elemento.appendChild(contenido);
+
+        var padre = document.getElementsByTagName("li")[0].parentNode,
+         referencia = document.getElementsByTagName ("li")[0];
+         padre.removeChild(referencia);
+
+              </script>
+            </body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <title>Document Object Model</title>
+      
+    </head>
+    <body>
+      <h1 id="titulo">titulo de nuestro Sitio web</h1>
+      <div id="subtitulo"></div>
+      <p>1.- Document <b>Object</b>  Model o DOM ('Modelo de Objetos del Documento' o 'Modelo en Objetos para la Representación de Documentos </p>
+         
+      <p id="segundo">2.- Document Object Model o DOM ('Modelo de Objetos del Documento' o 'Modelo en Objetos para la Representación de Documentos </p>
+
+      <p> 3.- Document Object Model o DOM ('Modelo de Objetos del Documento' o 'Modelo en Objetos para la Representación de Documentos</p>
+
+      <script>
+          var elementosp = document.getElementsByClassName("p");
+          var segundoparrafo = document.getElementById("segundo");
+
+        //   1.- crear el elemento
+            var elemento = document.createElement("h2");
+        //   2.- crear el nodo de texto
+            var contenido = document.createTextNode("este es nuestro titular");
+        //   3.- añadir el nodo de texto al elemento
+            elemento.appendchild("contenido");
+        //   4.- Agregar atributos al elemento
+            elemento.setAttribute("alin","center");
+        //   5.- Agregar el elemento al documento
+            document.body.appendChild(elemento);
+
+
+      </script>
+    </body>
+</html>
